@@ -1,15 +1,13 @@
 /* Resetando margens e padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 /* Corpo da página */
 body {
     font-family: Arial, sans-serif;
-    background-color: #000000;
-    color: #333;
+    background-image: url('https://i.pinimg.com/originals/55/01/60/5501609ee45d514d1f2c4a63502045e2.gif');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: #fff; /* Texto branco para contraste com a imagem de fundo */
     line-height: 1.6;
     padding: 20px;
 }
@@ -27,7 +25,6 @@ header h1 {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
- 
 }
 
 /* Estilo dos cards */
@@ -38,8 +35,7 @@ header h1 {
     padding: 20px;
     width: 300px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-    position: relative;
+        transition: transform 0.3s ease-in-out;
 }
 
 .card h2 {
@@ -81,22 +77,12 @@ header h1 {
 .card:hover {
     transform: translateY(-10px);
 }
-.card-container {
 
-    width: 500px;
+/* Ajustes no container dos cards */
+.card-container {
     display: flex;
     justify-content: center; /* Centraliza os cartões horizontalmente */
     flex-wrap: wrap; /* Permite que os cartões quebrem para a próxima linha */
     margin: 20px 0; /* Margem superior e inferior */
     width: 600px;
-}    /* Aumenta a largura do cartão para 500px */
-body {
-    font-family: Arial, sans-serif;
-    background-image: url('https://i.pinimg.com/originals/55/01/60/5501609ee45d514d1f2c4a63502045e2.gif');
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    color: #fff; /* Texto branco para contraste com a imagem de fundo */
-    line-height: 1.6;
-    padding: 20px;
 }
