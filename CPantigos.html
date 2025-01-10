@@ -1,44 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Computadores Antigos e Trabalho em Grupo</title>
+    <title>Computadores Antigos e Trabalho em Grupo</title>   <link rel="stylesheet" href="/estilos.css">
+    
 </head>
 <body>
-    <h1>Computadores Antigos e Trabalho em Grupo</h1>
-    <li>Nos primórdios dos computadores (décadas de 1940-1970), os sistemas eram gigantescos, lentos e baseados em cartões perfurados.</li>
-    <li><strong>Não havia colaboração em tempo real como hoje. Os programadores:</strong></li>
+    <header>
+        <h1>Computadores Antigos e Trabalho em Grupo</h1>
+    </header>
+
+    <section class="card-container">
+        <!-- Card 1 -->
+        <div class="card">
+            <h2>Nos Primórdios dos Computadores</h2>
+            <p>Nos primórdios dos computadores (décadas de 1940-1970), os sistemas eram gigantescos, lentos e baseados em cartões perfurados.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <h2>Não havia colaboração em tempo real</h2>
+            <p><strong>Os programadores:</strong></p>
             <ul>
                 <li>Criavam códigos individualmente em cartões ou fitas perfuradas.</li>
                 <li>Submetiam o programa para execução em lotes (batch processing).</li>
                 <li>Se algo desse errado, todo o processo precisaria ser refeito.</li>
             </ul>
-    
-    <li><strong>Não havia colaboração em tempo real como hoje. Os programadores:</strong></li>
-            <ul>
-                <li><strong>Antes do Git:</strong> Usavam sistemas centralizados como CVS e Subversion (SVN). O código ficava armazenado em um servidor central, e os desenvolvedores precisavam baixar ou “travar” arquivos para edição, o que causava conflitos e era lento.</li>
-                <li><strong>Na era pré-internet:</strong> as equipas de software usavam disquetes ou CDs para compartilhar código manualmente.</li>
-            </ul>
+        </div>
 
-    <li>Com o surgimento de sistemas como o Git (2005), tornou-se possível trabalhar em paralelo com mais eficiência, rastrear mudanças de forma distribuída, e resolver conflitos automaticamente.</li>
+        <!-- Card 3 -->
+        <div class="card">
+            <h2>Antes do Git</h2>
+            <p><strong>Usavam sistemas centralizados como:</strong></p>
+            <ul>
+                <li>CVS e Subversion (SVN), com o código armazenado em um servidor central.</li>
+                <li>Disquetes ou CDs eram usados para compartilhar código manualmente.</li>
+            </ul>
+        </div>
 
-    <h1>História Antiga e Contemporânea do Trabalho em Grupo</h1>
-    <li><strong>História antiga (antes do Git):</strong></li>
+        <!-- Card 4 -->
+        <div class="card">
+            <h2>Com o Git</h2>
+            <p>Com o surgimento de sistemas como o Git (2005), tornou-se possível trabalhar em paralelo com mais eficiência, rastrear mudanças de forma distribuída, e resolver conflitos automaticamente.</p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card">
+            <h2>História Antiga do Trabalho em Grupo</h2>
+            <p><strong>Antes do Git:</strong></p>
             <ul>
-                <li>Programadores usavam métodos simples, como documentar todas as mudanças manualmente.</li>
-                <li>A colaboração era limitada pelo fato de os arquivos ficarem em locais fixos.</li>
-                <li>Linhas de código precisavam ser comentadas extensivamente, já que não existia um histórico automatizado.</li>
+                <li>Programadores documentavam manualmente todas as mudanças.</li>
+                <li>A colaboração era limitada pela centralização dos arquivos.</li>
+                <li>Linhas de código eram comentadas extensivamente devido à falta de histórico automatizado.</li>
             </ul>
-    <li><strong>História contemporânea:</strong></li>
-        <ul>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card">
+            <h2>História Contemporânea do Trabalho em Grupo</h2>
+            <p><strong>Hoje, com ferramentas como GitHub, GitLab e Bitbucket:</strong></p>
             <ul>
-                <li>Hoje, com ferramentas como GitHub, GitLab e Bitbucket, o trabalho em grupo é facilitado por sistemas que:</li>
-            </ul>
                 <li>Gerenciam versões e históricos automaticamente.</li>
                 <li>Permitem integração contínua (CI/CD) para testes e deploy automáticos.</li>
-                <li>Ajudam a dividir o trabalho usando branches e pull requests, mantendo o código principal estável.</li>
-        </ul>
+                <li>Utilizam branches e pull requests para dividir o trabalho, mantendo o código principal estável.</li>
+            </ul>
+        </div>
+    </section>
 
 </body>
 </html>
