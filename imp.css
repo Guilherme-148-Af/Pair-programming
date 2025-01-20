@@ -1,0 +1,94 @@
+/* Resetando margens e padding */
+
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+   /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    color: white; /* Cor do texto em branco */
+}
+
+/* Títulos principais fora dos cards */
+h3 {
+    text-align: center; /* Centraliza os títulos */
+    color: rgb(255, 255, 255); /* Cor azul para os títulos principais */
+}
+h2{
+    color: rgb(255, 136, 0);
+}
+
+h1 {
+    text-align: center;
+    color: #ff0000;
+    font-size: 3rem; /* Tamanho maior para h1 fora dos cards */
+    margin-bottom: 20px;
+}
+
+/* Estilo do cartão */
+.card {
+    border: 1px solid #000000; /* Borda do cartão */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 16px; /* Espaçamento interno */
+    margin: 20px auto; /* Margem entre os cartões e centralizado */
+    width: 600px; /* Largura do cartão agora é 600px */
+    background-color: rgba(0, 0, 0, 0.9); /* Fundo escuro com leve transparência */
+    box-shadow: 0 2px 10px rgb(255, 255, 255); /* Sombra leve para o cartão */
+    border: 1px solid #ff0000;
+}
+
+/* Título dentro do card */
+.card h2 {
+    font-size: 2rem; /* Tamanho maior para o título dentro do card */
+    color: rgb(255, 153, 0); /* Cor azul para o título */
+    text-align: center; /* Centraliza o título dentro do card */
+}
+
+/* Lista dentro do card */
+.card ul {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding-left: 20px; /* Adiciona um pequeno preenchimento à esquerda para a lista */
+}
+
+/* Elementos de lista dentro do card */
+.card ul li {
+    margin-bottom: 10px; /* Adiciona espaçamento entre os itens da lista */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .card {
+        padding: 15px;
+    }
+}
+
+/* Container dos cartões */
+.cards-container {
+    width: 80%;
+    display: flex;
+    justify-content: center; /* Centraliza os cartões horizontalmente */
+    flex-wrap: wrap; /* Permite que os cartões quebrem para a próxima linha */
+    margin: 20px auto; /* Margem superior e inferior */
+}
+
+/* Card individual */
+.card {
+    width: 300px; /* Largura do cartão */
+    margin: 10px; /* Margem entre os cartões */
+    background-color: rgba(71, 71, 71, 0.9); /* Fundo escuro com leve transparência */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra leve para o cartão */
+    border: 1px solid #ff0000; /* Borda vermelha */
+}
+        /* Estilos para posicionar o botão no canto superior direito */
+        #toggleButton {
+            position: absolute;
+            top: 10px; /* Distância do topo */
+            right: 10px; /* Distância da direita */
+            z-index: 1000; /* Para garantir que o botão fique acima de outros elementos */
+        }
