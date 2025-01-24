@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Git e GitHub: Importância e Diferenças</title>
-    <link rel="stylesheet" href="imp.css">
+    <link rel="stylesheet" href="/imp.css">
 </head>
 <body>
     <header>
@@ -47,3 +47,69 @@
 
 </body>
 </html>
+<body>
+    <html>
+   
+   <button id="toggleButton">Alternar Modo</button>
+   
+   <div id="xmlData"></div> <!-- Div para exibir dados do XML -->
+   
+   <script>
+       // Lógica para alternar entre os modos
+       const toggleButton = document.getElementById('toggleButton');
+       let isDarkMode = false;
+   
+       toggleButton.addEventListener('click', () => {
+           if (isDarkMode) {
+               document.body.style.backgroundColor = 'white';
+               document.body.style.color = 'black';
+           } else {
+               document.body.style.backgroundColor = '#000000'; // Usando preto absoluto
+               document.body.style.color = 'white';
+               
+               // Garantindo que outros elementos também sejam ajustados
+               const xmlDataDiv = document.getElementById('xmlData');
+               xmlDataDiv.style.backgroundColor = '#000000'; // Fundo da div de dados XML
+               xmlDataDiv.style.color = 'white'; // Cor do texto na div de dados XML
+           }
+           isDarkMode = !isDarkMode;
+       });
+   
+       // Função para carregar e exibir dados do XML
+       function loadXMLData() {
+           const xhr = new XMLHttpRequest();
+           xhr.open('GET', 'data.xml', true);
+           xhr.onreadystatechange = function () {
+               if (xhr.readyState === 4) {
+                   if (xhr.status === 200) {
+                       const xml = xhr.responseXML;
+                       displayXMLData(xml);
+                   } else {
+                       console.error("Erro ao carregar o arquivo XML.");
+                   }
+               }
+           };
+           xhr.send();
+       }
+   
+       // Função para exibir dados do XML
+       function displayXMLData(xml) {
+           const xmlDataDiv = document.getElementById('xmlData');
+           const items = xml.getElementsByTagName('item'); // Supondo que você tenha elementos <item> no XML
+           if (items.length === 0) {
+               xmlDataDiv.innerHTML = '<p>Nenhum dado encontrado no XML.</p>';
+               return;
+           }
+           let output = '<h2>Dados do XML:</h2><ul>';
+           for (let i = 0; i < items.length; i++) {
+               output += `<li>${items[i].textContent}</li>`;
+           }
+           output += '</ul>';
+           xmlDataDiv.innerHTML = output;
+       }
+   
+       // Carregar dados do XML ao iniciar
+       loadXMLData();
+   </script>
+   </body>
+   </html>
